@@ -14,3 +14,11 @@ This is a script from SecCheckProject that helps you use your BinaryEdge's APIv2
 # Plan to do
 - Do not think something else for now...
 ------------------------------------------------
+
+------------------------------------------------
+# Instructions
+- <code>git clone https://github.com/JimChr-R4GN4R/BinaryEdgeAPIv2-Script.git</code>
+- <code>cd BinaryEdgeAPIv2-Script</code>
+- <code>chmod +x binaryedge.sh</code>
+- <code>sudo ./binaryedge.sh</code>
+------------------------------------------------
