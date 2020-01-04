@@ -190,11 +190,11 @@ elif [[ "$option" == "pkg_check" ]]; then
     BinaryEdgeMenu
 elif [[  "$option" == "updt_check" ]]; then
 
-    wget -q --tries=10 --timeout=20 --spider https://raw.githubusercontent.com/JimChrModder/BinaryEdgeAPIv2-Script/master/.version # check if have access with the repo
+    wget -q --tries=10 --timeout=20 --spider https://raw.githubusercontent.com/JimChr-R4GN4R/BinaryEdgeAPIv2-Script/master/.version # check if have access with the repo
 
     if [[ $? -eq 0 ]]; then # if connected with the repo
 
-        last_version=$(curl  -s -L https://raw.githubusercontent.com/JimChrModder/BinaryEdgeAPIv2-Script/master/.version) # get's last version number
+        last_version=$(curl  -s -L https://raw.githubusercontent.com/JimChr-R4GN4R/BinaryEdgeAPIv2-Script/master/.version) # get's last version number
         echo "Latest Version: $last_version"
         echo "Current Version: $current_version"
         echo "If you have outdated version, then download the latest version by downloading it here: https://github.com/JimChrModder/BinaryEdgeAPIv2-Script" 
