@@ -197,7 +197,7 @@ elif [[  "$option" == "updt_check" ]]; then
         last_version=$(curl  -s -L https://raw.githubusercontent.com/JimChr-R4GN4R/BinaryEdgeAPIv2-Script/master/.version) # get's last version number
         echo "Latest Version: $last_version"
         echo "Current Version: $current_version"
-        echo "If you have outdated version, then download the latest version by downloading it here: https://github.com/JimChrModder/BinaryEdgeAPIv2-Script" 
+        echo "If you have outdated version, then download the latest version by downloading it here: https://github.com/JimChr-R4GN4R/BinaryEdgeAPIv2-Script" 
         BinaryEdgeMenu
     else # if not connected with the repo
 
