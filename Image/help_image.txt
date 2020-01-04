@@ -1,0 +1,25 @@
+               ====================== - - - Image Guide - - - ======================
+
+> ip /// Details about Remote Desktops found on an Host. List of screenshots and details extracted from them for the specified host, 
+  |                              including OCR and whether faces were found or not, with data up to 2 months.. example: 12.34.56.78
+  |Parameters
+  |---> page=[int]  ///  Optional. Default 1. example: ip=12.34.56.78?page=1
+  | If you want to add the page parameter, you have to write '?' and then the parameter. 
+
+> hname2ip /// if you do not know host's IP you type it's name and it will do the same thing ip command does. example: www.example.com
+
+> hname2ipcon /// if you want just to retrieve a host's ip to use it differently from hname2ip, then you can use this command. example: hname2ipcon=www.binaryedge.io
+
+> search /// Remote Desktops based on a Query. List of screenshots and details extracted from them for the given query,
+  |  |       including OCR and whether faces were found or not. Can be used with specific parameters and/or full-text search.
+  |  |
+  |  |Parameters
+  |  |---> query=[String] /// String used to query our data. If no filters are used, it will perform a full-text search on the entire events.
+  |  |                        See Search Parameters for details on what parameters can be used by getting in Image/search/ and type "help_search".
+  |  |---> page=[Int] Optional. Default 1, Maximum: 500 (10,000 results) example: ip=12.34.56.78?page=1
+  |  |Search parameters have to be splitted with '&' symbol. example1: query=ip:xxx.xxx.xxx.xxx/AND/country:BE
+  |
+  |=> tags /// Get the list of possible tags for the images. For more details get in Image/search/ and type "help_search".
+               If you want to search for a tag, then go to Image/search/ and type "tags".
+
+

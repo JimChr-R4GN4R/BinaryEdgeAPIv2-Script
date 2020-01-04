@@ -1,0 +1,16 @@
+======================================= - - - Dataleaks Guide - - - ==========================================
+Allows you to search across multiple data breaches to see if any of your email addresses has been compromised.
+       If you are affected, we recommend you change your password on the respective services.
+==============================================================================================================
+
+> email /// Verify how many dataleaks affected an specific email address.
+            Which dataleaks affect the target email. example : test@example.com
+                             
+
+> domain /// Verify how many emails are affected by dataleaks for a specific domain.
+             We don't provide the list of affected emails.
+             For example, searching for the domain 'example.com' returns {"leak":"linkedin", "count":805}, 
+             this means there are 805 accounts with an example.com email on the Linkedin dump.
+              example : example.com
+
+> info /// Get all available information about the dataleaks our platform keeps track.

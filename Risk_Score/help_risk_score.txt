@@ -1,0 +1,12 @@
+               ====================== - - - Risk-Score Guide - - - ======================
+
+> hname2ipcon /// if you want just to retrieve a host's ip, then you can use this command. example: hname2ipcon=binaryedge.io
+
+> score /// IP Risk Score. Scoring is based on all information found on our databases regarding an IP and refers to the level of exposure of a target, i.e, 
+    |       the higher the score, the greater the risk of exposure. Fore more details about scoring type "score_details".
+    |---> ip /// you set host's IP you want the details. example: 12.34.56.78
+    |---> hname2ip /// if you do not know host's IP you type it's name and it will be converted to it's IP address. example: www.example.com
+
+> cve /// Get list of CVEs that migh affect a specific IP.
+    |---> ip /// you set host's IP you want the details. example: 12.34.56.78
+    |---> hname2ip /// if you do not know host's IP you type it's name and it will be converted to it's IP address. example: www.example.com

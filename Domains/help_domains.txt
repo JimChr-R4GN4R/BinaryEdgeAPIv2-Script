@@ -1,0 +1,46 @@
+              ================================= - - - Domains Guide - - - =================================                      
+              What is exposed via DNS? What subdomains belong to a Domain? What domains are served by IP X?
+              =============================================================================================
+
+> hname2ipcon /// if you want just to retrieve a host's ip, then you can use this command. example: hname2ipcon=binaryedge.io
+
+> subdomain /// Return list of subdomains known from the target domains. example: subdomain=binaryedge.io
+      |Parameters
+      |---> page=[int]  ///  Optional. Default 1, Maximum: 500 (10,000 results). example : subdomain=binaryedge.io?page=1
+
+> dns /// Return list of known DNS results for the target domain. example: dns=binaryedge.io *PAID subscription*
+   |      Possible types of records currently available: A, AAAA, NS, MX
+   |Parameters
+   |---> page=[int]  ///  Optional. Default 1, Maximum: 500 (10,000 results). example : dns=binaryedge.io?page=1
+
+> ip /// Return records that have the specified IP address in their A or AAAA records. *PAID subscription*
+  |      Supports IPV4 or IPV6. example: ip=12.34.56.78
+  |Parameters
+  |---> page=[int]  ///  Optional. Default 1, Maximum: 500 (10,000 results). example : ip=8.8.8.8?page=1
+
+> search /// List of Domains/DNS data based on a Query. Can be used with specific parameters and/or full-text search.
+    |        Possible types of records currently available: A, AAAA, NS, MX, CNAME, TXT
+    |
+    |Parameters
+    |---> query=[String] ///String used to query our data. If no filters are used,
+    |                       it will perform a full-text search on the entire events.  example1: query=A:12.34.56.78
+    |                                                                                 example2: query=12.34.56.78
+    |                                                                         !example1 and example2 have different results!
+    |---> page=[Int] /// Optional. Default 1, Maximum: 500 (10,000 results)
+    |Search parameters have to be splitted with '&' symbol. example: query=A:127.0.0.1&page=1
+
+> enumeration /// This endpoint attempts to enumerate subdomains from a larger dataset, *BUSINESS subscriptions*
+     |            the validate flag can be used to have all subdomains resolved on the
+     |            fly and only those with DNS entries behind them returned.
+     |Parameters
+     |---> validate=[int] /// Optional. Forces all subdomains to be resolved on request 
+                              and only live subdomains to be returned. 
+                              Default: 0 (False) example: enumeration=binaryedge.io?validate=1
+
+> homoglyphs /// This endpoint generates a list of homoglyphs for a base domain and will *BUSINESS subscriptions*
+     |           attempt to resolve all found upon request, if the validate 
+     |           flag isn't used the full list of possible homoglyphs is returned.
+     |Parameters
+     |---> validate=[int] /// Optional. Forces all subdomains to be resolved on request 
+                              and only live subdomains to be returned. 
+                              Default: 0 (False) example: homoglyphs=binaryedge.io?validate=1
