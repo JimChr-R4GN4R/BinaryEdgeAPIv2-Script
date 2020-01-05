@@ -22,3 +22,6 @@ This is a script from SecCheckProject that helps you use your BinaryEdge's APIv2
 - <code>chmod +x binaryedge.sh</code>
 - <code>sudo ./binaryedge.sh</code>
 ------------------------------------------------
+
+
+This is a Alpha version. So some things may change in the future...
