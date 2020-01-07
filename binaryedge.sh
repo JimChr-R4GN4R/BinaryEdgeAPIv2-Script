@@ -4,7 +4,6 @@ NC='\033[0m'
 GREEN='\033[1;32m'
 ORANGE='\033[0;33m'
 
-
 ####################################
 if [ "$EUID" -ne 0 ]              #### Check for root access else exit
   then echo "Please run as root." ##
@@ -197,7 +196,16 @@ elif [[  "$option" == "updt_check" ]]; then
         last_version=$(curl  -s -L https://raw.githubusercontent.com/JimChr-R4GN4R/BinaryEdgeAPIv2-Script/master/.version) # get's last version number
         echo "Latest Version: $last_version"
         echo "Current Version: $current_version"
-        echo "If you have outdated version, then download the latest version by downloading it here: https://github.com/JimChr-R4GN4R/BinaryEdgeAPIv2-Script" 
+        last_version_updt=${last_version//./} # remove the dots from last_version number. example 1.1 --> 11
+        current_version_updt=${current_version//./} # remove the dots from current_version number. example 1.1 --> 11
+
+        if [[ $last_version_updt -gt $current_version_updt ]]; then
+            echo "Please update The script!"
+            echo "Visit: https://github.com/JimChr-R4GN4R/BinaryEdgeAPIv2-Script"
+        else
+            echo "You are up to date!"
+        fi
+
         BinaryEdgeMenu
     else # if not connected with the repo
 
