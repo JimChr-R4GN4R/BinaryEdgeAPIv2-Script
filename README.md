@@ -12,7 +12,7 @@ This is a script from SecCheckProject that helps you use your BinaryEdge's APIv2
 
 ------------------------------------------------
 # Plan to do
-- Do not think something else for now... Maybe make the script better I guess XD.
+- Planning to add an image saving in Image folder if images found.
 ------------------------------------------------
 
 ------------------------------------------------
