@@ -1,6 +1,6 @@
 # BinaryEdgeSploit
 
-This is a script from SecCheckProject that helps you use your BinaryEdge's APIv2 with your terminal with very simple commands and some other practical features.
+This is a script from SecCheckProject that helps you use your BinaryEdge's APIv2 (for now) with your terminal with very simple commands and some other practical features.
 
 ------------------------------------------------
 # Changelog V 1.1
