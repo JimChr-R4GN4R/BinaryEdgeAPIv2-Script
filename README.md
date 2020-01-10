@@ -23,6 +23,9 @@ This is a script from SecCheckProject that helps you use your BinaryEdge's APIv2
 - <code>sudo ./binaryedge.sh</code>
 - Type "help" and then check for the packages that the script needs
 - Ready to go!
+
+- You can watch this video which shows the installation and usage instructions:
+https://www.youtube.com/watch?v=fPzptp1Qljs
 ------------------------------------------------
 
 
